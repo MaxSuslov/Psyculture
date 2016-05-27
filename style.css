@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+html {
+  font-size: 14px;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+body {
+  background: url('img/navbackground.png');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+div {
+  border: none;
+  box-sizing: border-box;
+}
+
+#go-top {
+  position: fixed; 
+  bottom: 30px; 
+  right: 20px; 
+  cursor:pointer; 
+  display:none;
+  width: 4rem;
+  height: 1.5rem;
+  text-align: center;
+  background: #D4B30A;
+  color: darkmagenta;
+  border-radius: 15%;
+  transition: all linear 1s;
+}
+ 
+#go-top:hover {
+  background: #333;
+  color: #D4B30A;
+}
+
+.fullwrap {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0 auto;
+  background: url("img/matrixrain.gif"); 
+}
+
+.header, .wrap, .footer {
+  max-width: 100%;
+  margin: .5% auto;
+}
+
+.wrap {
+  height: 65%;
+  background: darkgrey;
+  box-sizing: content-box;
+  padding: 1% auto;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav {
+  background: url('img/gradientheader64-2.jpg');
+  overflow: hidden;
+  color: #5AF50C;
+}
+
+nav ul a {
+  color: yellow;
+  font-weight: 700;
+}
+
+.collapsible-body {
+  background: #6E1A3E;
+}
+
+.collapsible-header {
+  background: #320033;
+}
+
+.side-nav li:hover,
+.side-nav a:hover,
+.side-nav a:active,
+.side-nav li.active,
+.side-nav ul li:active,
+.side-nav ul li a:active,
+.side-nav ul li:hover,
+.side-nav ul li a:hover {
+  background: #320033;
+}
+
+.side-nav .collapsible-body {
+  background: #6F193C;
+}
+
+.side-nav .collapsible-header:active {
+  background: #320033;
+}
+
+.dropdown-content li>a, 
+.dropdown-content li>span {
+  color: yellowgreen;
+  background: url('img/gradientheader1.jpg');
+  overflow: hidden;
+}
+
+.dropdown-content li>a:hover, 
+.dropdown-content li>span:hover {
+  background: url('img/gradientheader64-2.jpg');
+/*   opacity: 0.7; */
+}
+
+.drag-target {
+  border: none;
+}
+
+#slide-out {
+  background: url('img/gradientheader111.jpg');
+  overflow: hidden;
+}
+
+.side-nav a,
+a.collapsible-header {
+  color: yellowgreen;
+}
+
+.main {
+  background: url('img/backgroundgeometry13.jpg');
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.rubrika {
+  width: 31.333%;
+  height: 250px;
+  margin: 1% 1% 3%;
+  float: left;
+  padding-bottom: 1%;
+}
+
+.rubrika img {
+  width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+.button {
+  font-family: /* 'Roboto Condensed' */Arial, sans-serif;
+  margin: 0 auto 3%;
+  background: #ee6123;
+  width: 100%;
+  /*height: 10%;*/
+  border-radius: .35rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.28rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  padding: 2.5%;
+}
+ 
+.button p {
+  margin: 0;
+  position: relative;
+  transition: all ease 1s;
+  vertical-align: middle;
+}
+ 
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #205081;
+  overflow: hidden;
+  transition: all ease 2s;
+  border-radius: .35rem;
+  opacity: 0;
+  padding: .7rem 0;
+}
+
+.shadow span {
+  opacity:0;
+  transition: all ease 3s;
+}
+ 
+.button:hover .shadow {
+  width: 100%;
+  opacity: 1;
+}
+ 
+.button:hover p {
+  opacity: 0;
+}
+ 
+.button:hover .shadow span {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  margin: 1% auto .5%;
+  height: 15%;
+  background: url('img/backgroundgeometry9.jpg');
+  clear: both;
+  padding: .5%;
+}
+
+footer ul li .collapsible-body {
+  background: url('img/bg7.jpg');
+}
+
+footer ul li .collapsible-header {
+  background: url('img/navgeogradient.jpg');
+  text-align: justify;
+}
+
+#aboutUs {
+  background: url('img/aboutbackgr.jpg');
+}
+
+#aboutUs p {
+  font-size: 1.25rem;
+  text-align: justify;
+  padding: 0 2% 2%;
+  color: ghostwhite;
+}
+
+#aboutUs h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2%;
+  color: greenyellow;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#aboutUs h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: ghostwhite;
+  font-weight: 700;
+}
+
+#aboutUs img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax {
+  padding: 0;
+}
+
+.section {
+  background: url('img/bg11.jpg');
+}
+
+.header {
+  background: url('img/navbackdark.png');
+  color: white;
+  padding: 1rem;
+  border-radius: 55%;
+  text-align: center;
+}
+
+.section p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+#slideShow {
+  padding: 100px;
+  background: url('img/navbackground.png');
+}
+
+.slider .indicators .indicator-item {
+  height: 30px;
+  width: 30px;
+}
+
+.slider .indicators .indicator-item.active {
+  height: 30px;
+  width: 30px;
+  background-color: indigo;
+}
+
+.slider .slides {
+  background-color: transparent;
+}
+
+figure {
+  margin: 0 auto;
+  overflow: hidden;
+  background: #e8693a;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 90%;
+  font-style: italic;
+}
+
+.quadro {
+  width: 100%;
+  height: 100%;
+  margin: 0.5%;
+  display: inline-block;
+  float: left;
+  padding: 0 auto;
+  object-fit: scale-down;
+}
+
+figure .material-placeholder {
+  width: 24%;
+  height: 20%;
+  max-width: 49%;
+  display: inline-block;
+}
+
+.wrapMatrix {
+  position: relative;
+  padding: 0;
+}
+
+.wrapMatrix video {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.black-cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  padding-top: 25%;
+}
+
+.black-cover h3 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  transition: all linear 5s;
+  margin: 0;
+}
+
+.black-cover h3:hover {
+  -o-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+  color: red; 
+  font-size: 1rem;
+}
+
+.copyright {
+  color: white;
+  background: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rubrika {
+    width: 48%;
+    margin-bottom: 6%;
+  }
+  #rubrFest,
+  #rubrForum,
+  #rubrDecor {
+    float: left;
+  }
+  #rubrRadio,
+  #rubrApparel,
+  #rubrHolst {
+    float: right;
+  }
+  .main {
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .black-cover {
+    padding: 15%;
+    box-sizing: border-box;
+  }
+  #slideShow {
+    padding: 0;
+  }
+  .rubrika {
+  width: 100%;
+  float: none;
+  margin: 0 auto 11%;
+  }
+  #aboutUs p {
+  font-size: 1rem;
+  }
+  #aboutUs h1 {
+  font-size: 1.5rem;
+  }
+  #aboutUs h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .collapsible-header {
+    line-height: 1rem;
+  }
+  #aboutUs h1 {
+    font-size: 1.25rem;
+  }
+  #aboutUs h2 {
+    font-size: 1rem;
+  }
+}
